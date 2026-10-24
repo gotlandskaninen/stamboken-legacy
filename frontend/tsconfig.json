@@ -33,8 +33,6 @@
   "include": ["src/**/*"],
   "exclude": [
     "**/node_modules/*",
-    "**/dist/*",
-    "jest.config.js",
-    "jest.setup.js"
+    "**/dist/*"
   ]
 }

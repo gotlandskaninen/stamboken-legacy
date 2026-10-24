@@ -1,7 +1,10 @@
 /* stylelint-disable */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "@fontsource/open-sans/latin-400.css";
+@import "@fontsource/roboto/latin-300.css";
+@import "@fontsource/roboto/latin-400.css";
+@import "@fontsource/roboto/latin-500.css";
+@import "@fontsource/roboto/latin-700.css";
 
 html {
   margin: 0;

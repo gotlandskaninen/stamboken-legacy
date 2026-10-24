@@ -5,6 +5,8 @@ esbuild                                          \
     --outdir=dist                                \
     --loader:.png=file                           \
     --loader:.jpg=file                           \
+    --loader:.woff=file                          \
+    --loader:.woff2=file                         \
     --external:/images/*                         \
     --target=es6                                 \
     --minify                                     \

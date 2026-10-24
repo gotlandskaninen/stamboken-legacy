@@ -9,6 +9,9 @@ import { Individual } from "@app/data_context_global";
 import { styles } from "@material-ui/pickers/views/Calendar/Calendar";
 import { useMessageContext } from "@app/message_context";
 
+// Module scope: react-pdf reloads the document when options change identity
+const pdfOptions = { isEvalSupported: false };
+
 const useStyles = makeStyles({
   titleText: {
     width: "100%",
@@ -71,8 +74,10 @@ export function CertificateVerification({
   //States to make pdf-preview-library work
   const [numPages, setNumPages] = React.useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
-  const [previewUrl, setPreviewUrl] = React.useState(undefined as unknown);
-  const [previewWidth, setPreviewWidth] = React.useState(0 as Number);
+  const [previewUrl, setPreviewUrl] = React.useState(
+    undefined as Blob | undefined
+  );
+  const [previewWidth, setPreviewWidth] = React.useState(0);
   const style = useStyles();
   const { userMessage } = useMessageContext();
 
@@ -134,7 +139,7 @@ export function CertificateVerification({
         "Content-Type": "application/json",
       },
     })
-      .then((res) => res.arrayBuffer())
+      .then((res) => res.blob())
       .then((data) => {
         setPreviewWidth(window.innerWidth * 0.5);
         setPreviewUrl(data);
@@ -258,12 +263,17 @@ export function CertificateVerification({
       {showPdf ? (
         <Document
           file={previewUrl}
+          options={pdfOptions}
           onLoadSuccess={onDocumentLoadSuccess}
-          renderAnnotationLayer={true}
           loading={<CircularProgress />}
           noData=""
         >
-          <Page pageNumber={pageNumber} width={previewWidth} />
+          <Page
+            pageNumber={pageNumber}
+            width={previewWidth}
+            renderAnnotationLayer={false}
+            renderTextLayer={false}
+          />
         </Document>
       ) : (
         <div></div>

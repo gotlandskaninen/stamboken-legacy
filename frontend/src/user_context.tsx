@@ -2,7 +2,6 @@ import * as React from "react";
 
 import { post, get } from "@app/communication";
 import { useDataContext } from "@app/data_context";
-import hotjar from "react-hotjar";
 
 /** The currently logged in user, if any */
 export interface User {
@@ -72,10 +71,6 @@ export function WithUserContext(props: { children: React.ReactNode }) {
       (data) => {
         console.log(data);
         setUser(data ?? null);
-        hotjar.hotjar.identify(data?.username, {
-          is_manager: data?.is_manager,
-          is_owner: data?.is_owner?.toString(),
-        });
         return data ? "logged_in" : "logged_out";
       },
       (error) => {

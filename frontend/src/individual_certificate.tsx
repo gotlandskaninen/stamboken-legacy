@@ -1,8 +1,11 @@
 import React from "react";
 
 import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// build.sh copies the worker into dist/ under this name
+pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker-${pdfjs.version}.min.js`;
+
+// Module scope: react-pdf reloads the document when options change identity
+const pdfOptions = { isEvalSupported: false };
 
 import {
   Button,
@@ -82,7 +85,9 @@ export function IndividualCertificate({
   const [confirmId, setConfirmId] = React.useState("");
   const [isUserGood, setIsUserGood] = React.useState(false);
   //States for API-requests
-  const [previewUrl, setPreviewUrl] = React.useState(undefined as unknown);
+  const [previewUrl, setPreviewUrl] = React.useState(
+    undefined as Blob | undefined
+  );
   const [certificateUrl, setCertificateUrl] = React.useState("");
   //States to make pdf-preview-library work
   const [numPages, setNumPages] = React.useState(null);
@@ -251,7 +256,7 @@ export function IndividualCertificate({
         "Content-Type": "application/json",
       },
     })
-      .then((res) => res.arrayBuffer())
+      .then((res) => res.blob())
       .then((data) => {
         setPreviewUrl(data);
       })
@@ -408,14 +413,14 @@ export function IndividualCertificate({
           <h1>Är alla uppgifter korrekta?</h1>
           <Document
             file={previewUrl}
+            options={pdfOptions}
             onLoadSuccess={onDocumentLoadSuccess}
             loading={<CircularProgress />}
           >
             <Page
               pageNumber={pageNumber}
-              renderAnnotationLayer={true}
+              renderAnnotationLayer={false}
               renderTextLayer={false}
-              renderInteractiveForms={false}
               scale={1.5}
             />
           </Document>

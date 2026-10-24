@@ -2,7 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import styled, * as sc from "styled-components";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import CookieConsent from "react-cookie-consent";
 import { BrowserRouter } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 
@@ -17,10 +16,6 @@ const Main = (
   <>
     <StylesProvider injectFirst>
       <CssBaseline />
-      <CookieConsent buttonText="Okej! Jag förstår!">
-        För att få Stamboken att fungera måste vi lagra några kakor på din
-        enhet. Genom att fortsätta använda sidan godkänner du detta.
-      </CookieConsent>
       <BrowserRouter>
         <WithDataContext>
           <WithUserContext>

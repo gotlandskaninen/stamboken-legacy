@@ -487,7 +487,8 @@ export function IndividualForm({
                   href={
                     "https://drive.google.com/file/d/18oKM3eZWVGirFyMf8OHkysKG0n5LSRw4/view?usp=sharing"
                   }
-                  target={"blank"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
                 >
                   {" "}
                   Utförligare färgbeskrivningar finns i Föreningen

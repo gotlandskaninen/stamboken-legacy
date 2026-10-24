@@ -110,7 +110,7 @@ export function WithMessageContext(props: { children: React.ReactNode }) {
         <DialogContent>{dialogContent}</DialogContent>
         <DialogActions>
           {dialogLink && (
-            <Link to={dialogLink} target="_blank">
+            <Link to={dialogLink} target="_blank" rel="noopener noreferrer">
               <Button color="primary">Öppna i eget fönster</Button>
             </Link>
           )}

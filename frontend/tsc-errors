@@ -1,0 +1,4 @@
+#!/bin/sh
+# Type errors in src/ without line and column, sorted, so CI can diff them
+# against tsc-baseline.txt and catch new errors that moved code would hide.
+node_modules/.bin/tsc --noEmit -p . | grep "^src/.*error TS" | sed -E 's/^([^(]+)\([0-9]+,[0-9]+\)/\1/' | LC_ALL=C sort

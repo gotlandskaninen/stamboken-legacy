@@ -1,61 +1,15 @@
-# Reserve a directory for personal stuff
-personal
-
-# OS X
+# OS och editor
 .DS_Store
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 .vscode
 *.code-workspace
-.tox/
-.docker/database-variables.env
-.docker/r-api-variables.env
-.docker/main-api-variables.env
 
-# test coverage report
-.coverage
-*,cover
+# Miljöfiler
+.env
+.env.*
 
-# frontend files that shouldn't be committed
+# Frontend-bygge
 frontend/dist/
 frontend/build/
 frontend/coverage/
 frontend/node_modules/
 *.js.map
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# database files
-postgres-data/
-db_dumps/
-db-dump*
-
-# config files
-config.ini
-config/*
-^config/README.md
-^config/updates/README.md
-
-# s3 data storage
-s3data/*
-
-# Files related to loading data
-*.csv
-*.dump
-*.xlsx
-
-# Logs
-logs/*
-
-#
-cache/*

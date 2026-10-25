@@ -15,5 +15,5 @@ fi
 awk '/^[^ ]/ { if (r != "") print r; r = $0; next }
      { sub(/^ +/, ""); r = r " | " $0 }
      END { if (r != "") print r }' "$out" |
-  grep "^src/.*error TS" | sed -E 's/\([0-9]+,[0-9]+\)//g' | LC_ALL=C sort
+  grep "^src/.*error TS" | sed -E 's/^([^:]+)\([0-9]+,[0-9]+\):/\1:/' | LC_ALL=C sort
 rm -f "$out"

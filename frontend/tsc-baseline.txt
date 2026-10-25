@@ -1,0 +1,301 @@
+src/HerdContactUpdateStep.tsx: error TS2322: Type 'keyof ExtendedHerd' is not assignable to type 'string'. | Type 'number' is not assignable to type 'string'.
+src/breeding_context.tsx: error TS2322: Type '() => { id: number; breed_date: null; breed_notes: string; father: string; mother: string; birth_date: null; birth_notes: string; litter_size: null; litter_size6w: null; }' is not assignable to type '(updates: Breeding, breedingMatch: Breeding) => Breeding'. | Property 'breeding_herd' is missing in type '{ id: number; breed_date: null; breed_notes: string; father: string; mother: string; birth_date: null; birth_notes: string; litter_size: null; litter_size6w: null; }' but required in type 'Breeding'.
+src/breeding_context.tsx: error TS2339: Property 'breedings' does not exist on type 'Breeding[]'.
+src/breeding_context.tsx: error TS2339: Property 'breedings' does not exist on type 'Breeding[]'.
+src/breeding_context.tsx: error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/breeding_context.tsx: error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/breeding_context.tsx: error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/breeding_context.tsx: error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/breeding_form.tsx: error TS2322: Type '"standard" | "filled" | "outlined"' is not assignable to type 'WrapperVariant | undefined'. | Type '"standard"' is not assignable to type 'WrapperVariant | undefined'.
+src/breeding_form.tsx: error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>) => void' is not assignable to type '(event: ChangeEvent<{}>, checked: boolean) => void'. | Types of parameters 'e' and 'event' are incompatible. | Type 'ChangeEvent<{}>' is not assignable to type 'ChangeEvent<HTMLInputElement>'.
+src/breeding_form.tsx: error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>) => void' is not assignable to type '(event: ChangeEvent<{}>, checked: boolean) => void'. | Types of parameters 'e' and 'event' are incompatible. | Type 'ChangeEvent<{}>' is not assignable to type 'ChangeEvent<HTMLInputElement>'. | Type '{}' is missing the following properties from type 'HTMLInputElement': accept, align, alt, autocomplete, and 341 more.
+src/breeding_form.tsx: error TS2322: Type '(value: Date) => void' is not assignable to type '(date: MaterialUiPickersDate, value?: string | null | undefined) => void'. | Types of parameters 'value' and 'date' are incompatible. | Type 'MaterialUiPickersDate' is not assignable to type 'Date'. | Type 'null' is not assignable to type 'Date'.
+src/breeding_form.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/breeding_form.tsx: error TS2339: Property 'birth_date' does not exist on type 'Breeding | Birth'. | Property 'birth_date' does not exist on type 'Birth'.
+src/breeding_form.tsx: error TS2339: Property 'birth_date' does not exist on type 'Breeding | Birth'. | Property 'birth_date' does not exist on type 'Birth'.
+src/breeding_form.tsx: error TS2339: Property 'herd' does not exist on type 'string'.
+src/breeding_form.tsx: error TS2339: Property 'herd' does not exist on type 'string'.
+src/breeding_form.tsx: error TS2339: Property 'individuals' does not exist on type '"new" | Breeding'. | Property 'individuals' does not exist on type '"new"'.
+src/breeding_form.tsx: error TS2339: Property 'mother' does not exist on type '"new" | Breeding'. | Property 'mother' does not exist on type '"new"'.
+src/breeding_form.tsx: error TS2345: Argument of type 'Breeding' is not assignable to parameter of type 'SetStateAction<ExtendedBreeding>'. | Type 'Breeding' is missing the following properties from type 'ExtendedBreeding': mother_name, father_name, individuals
+src/breeding_form.tsx: error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'. | Type 'null' is not assignable to type 'number'.
+src/breeding_form.tsx: error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'. | Type 'null' is not assignable to type 'number'.
+src/breeding_form.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/breeding_form.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/breeding_form.tsx: error TS2345: Argument of type '{ herd: string; origin_herd: HerdNameID; genebank: string | undefined; certificate: null; birth_date: any; number: null; father: LimitedIndividual; mother: LimitedIndividual; ... 15 more ...; breeding: number; }' is not assignable to parameter of type 'Individual'. | Type '{ herd: string; origin_herd: HerdNameID; genebank: string | undefined; certificate: null; birth_date: any; number: null; father: LimitedIndividual; mother: LimitedIndividual; ... 15 more ...; breeding: number; }' is missing the following properties from type 'Individual': is_registered, has_photo, butchered, castration_date
+src/breeding_form.tsx: error TS2741: Property 'breeding_herd' is missing in type '{ id: number; breed_date: null; breed_notes: string; father: string; mother: string; birth_date: null; birth_notes: string; litter_size: null; litter_size6w: null; }' but required in type 'Breeding'.
+src/breeding_form.tsx: error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/breeding_list.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/cert_autocomplete.tsx: error TS2322: Type '(event: any, newValue: OptionType) => void' is not assignable to type '(event: ChangeEvent<{}>, value: OptionType | null, reason: AutocompleteChangeReason, details?: AutocompleteChangeDetails<OptionType> | undefined) => void'. | Types of parameters 'newValue' and 'value' are incompatible. | Type 'OptionType | null' is not assignable to type 'OptionType'. | Type 'null' is not assignable to type 'OptionType'.
+src/certificate_verification.tsx: error TS7031: Binding element 'numPages' implicitly has an 'any' type.
+src/collapsible_sorted_table.tsx: error TS7006: Parameter 'indi' implicitly has an 'any' type.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Herd'. | No index signature with a parameter of type 'string' was found on type 'Herd'.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Herd'. | No index signature with a parameter of type 'string' was found on type 'Herd'.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Herd'. | No index signature with a parameter of type 'string' was found on type 'Herd'.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'. | No index signature with a parameter of type 'string' was found on type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'. | No index signature with a parameter of type 'string' was found on type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'.
+src/communication.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'. | No index signature with a parameter of type 'string' was found on type '{ has_details: boolean; start_date: string | null; name: string | null; name_privacy?: PrivacyLevel | undefined; physical_address: string | null; physical_address_privacy?: PrivacyLevel | undefined; ... 19 more ...; is_active: boolean | null; }'.
+src/data_context_global.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/data_context_global.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/data_context_global.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/data_context_global.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/data_context_global.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/data_context_global.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/data_context_global.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/data_context_global.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/data_context_global.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/data_context_global.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/data_context_global.tsx: error TS2739: Type '{ genebanks: never[]; users: never[]; colors: {}; setGenebanks(): void; setUsers(): void; loadData(): Promise<false>; }' is missing the following properties from type 'DataContext': herdChangeListener, herdListener, setHerdChangeListener, setHerdListener
+src/data_context_global.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number'.
+src/data_context_global.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number | Date'. | Type 'null' is not assignable to type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number'. | Type 'null' is not assignable to type 'string | number'.
+src/filter_table.tsx: error TS18048: 'isActiveFilter' is possibly 'undefined'.
+src/filter_table.tsx: error TS18049: 'aVal' is possibly 'null' or 'undefined'.
+src/filter_table.tsx: error TS18049: 'aVal' is possibly 'null' or 'undefined'.
+src/filter_table.tsx: error TS18049: 'bVal' is possibly 'null' or 'undefined'.
+src/filter_table.tsx: error TS18049: 'bVal' is possibly 'null' or 'undefined'.
+src/filter_table.tsx: error TS2322: Type 'Date | 0' is not assignable to type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[] | null | undefined'.
+src/filter_table.tsx: error TS2322: Type 'Date | 0' is not assignable to type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[] | null | undefined'. | Type 'Date' is not assignable to type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[] | null | undefined'. | Type 'Date' is missing the following properties from type 'DateValue[]': length, pop, push, concat, and 28 more.
+src/filter_table.tsx: error TS2322: Type '{ field: "herd"; label: string; sortAs: "number"; hidden: boolean; sortBy: string; action: (rowData: any) => void; render: (rowData: any) => React.JSX.Element; }' is not assignable to type 'Column'. | Object literal may only specify known properties, and 'action' does not exist in type 'Column'.
+src/filter_table.tsx: error TS2339: Property 'replace' does not exist on type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'. | Property 'replace' does not exist on type 'number'.
+src/filter_table.tsx: error TS2339: Property 'replace' does not exist on type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'. | Property 'replace' does not exist on type 'number'.
+src/filter_table.tsx: error TS2345: Argument of type 'Filter | undefined' is not assignable to parameter of type 'Filter'. | Type 'undefined' is not assignable to type 'Filter'.
+src/filter_table.tsx: error TS2345: Argument of type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string'.
+src/filter_table.tsx: error TS2345: Argument of type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string'. | Type 'number' is not assignable to type 'string'.
+src/filter_table.tsx: error TS2533: Object is possibly 'null' or 'undefined'.
+src/filter_table.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | number | true | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | number | true | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string | number'.
+src/filter_table.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | number | true | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string | number | Date'. | Type 'boolean' is not assignable to type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | number | true | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]' is not assignable to parameter of type 'string | number'. | Type 'boolean' is not assignable to type 'string | number'.
+src/filter_table.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'. | No index signature with a parameter of type 'string' was found on type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'.
+src/filter_table.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'. | No index signature with a parameter of type 'string' was found on type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'.
+src/filter_table.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'. | No index signature with a parameter of type 'string' was found on type 'string | number | boolean | HerdNameID | LimitedIndividual | DateWeight[] | DateBodyfat[] | DateValue[]'.
+src/genebank_view.tsx: error TS2305: Module '"@material-ui/core"' has no exported member 'make'.
+src/genebank_view.tsx: error TS2739: Type '{ individuals: Individual[]; title: string; filters: ({ field: "is_active"; label: string; logic: true; active: true; tooltip: string; } | { field: "is_active"; label: string; logic: false; active: false; tooltip: string; } | { ...; } | { ...; })[]; }' is missing the following properties from type '{ id?: string | undefined; individuals: Individual[]; title: string; filters: Filter[]; action: Action | undefined; actionIcon: any; actionLabel: string; }': action, actionIcon, actionLabel
+src/herdForm.tsx: error TS18049: 'user' is possibly 'null' or 'undefined'.
+src/herdForm.tsx: error TS18049: 'user' is possibly 'null' or 'undefined'.
+src/herdForm.tsx: error TS2322: Type 'string | number | boolean | Individual[] | null | undefined' is not assignable to type 'string | null'. | Type 'undefined' is not assignable to type 'string | null'.
+src/herdForm.tsx: error TS2322: Type 'string | number | boolean | Individual[] | null' is not assignable to type 'PrivacyLevel | undefined'. | Type 'string' is not assignable to type 'PrivacyLevel | undefined'.
+src/herdForm.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'number'. | Type 'undefined' is not assignable to type 'number'.
+src/herdForm.tsx: error TS2339: Property 'id' does not exist on type 'number'.
+src/herdForm.tsx: error TS2339: Property 'id' does not exist on type 'number'.
+src/herdForm.tsx: error TS2531: Object is possibly 'null'.
+src/herdForm.tsx: error TS2531: Object is possibly 'null'.
+src/herdForm.tsx: error TS2531: Object is possibly 'null'.
+src/herdForm.tsx: error TS2769: No overload matches this call. | Overload 1 of 2, '(predicate: (this: void, value: LimitedHerd, index: number, obj: LimitedHerd[]) => value is LimitedHerd, thisArg?: any): LimitedHerd | undefined', gave the following error. | Argument of type '(h: Herd) => boolean' is not assignable to parameter of type '(this: void, value: LimitedHerd, index: number, obj: LimitedHerd[]) => value is LimitedHerd'. | Types of parameters 'h' and 'value' are incompatible. | Type 'LimitedHerd' is missing the following properties from type 'Herd': has_details, start_date, name, physical_address, and 8 more. | Overload 2 of 2, '(predicate: (value: LimitedHerd, index: number, obj: LimitedHerd[]) => unknown, thisArg?: any): LimitedHerd | undefined', gave the following error. | Argument of type '(h: Herd) => boolean' is not assignable to parameter of type '(value: LimitedHerd, index: number, obj: LimitedHerd[]) => unknown'. | Types of parameters 'h' and 'value' are incompatible. | Type 'LimitedHerd' is not assignable to type 'Herd'.
+src/herd_view.tsx: error TS2322: Type '((event: any, rowData: any) => void) | undefined' is not assignable to type 'Action | undefined'. | Type '(event: any, rowData: any) => void' is not assignable to type 'Action'. | Type 'void' is not assignable to type '{}'.
+src/herd_view.tsx: error TS2322: Type 'false | Pedigree' is not assignable to type '{ edges: any[]; nodes: any[]; }'. | Type 'boolean' is not assignable to type '{ edges: any[]; nodes: any[]; }'.
+src/herd_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/herd_view.tsx: error TS2739: Type '{ id: string | undefined; view: "info"; fromHerd: Herd; }' is missing the following properties from type '{ id: string | undefined; genebank: string | undefined; view: "form" | "info"; change: boolean; fromHerd: Herd | undefined; }': genebank, change
+src/individual_add.tsx: error TS18047: 'individual.birth_date' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.litter_size' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.litter_size6w' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.number' is possibly 'null'.
+src/individual_add.tsx: error TS18047: 'individual.selling_date' is possibly 'null'.
+src/individual_add.tsx: error TS18048: 'individual.origin_herd' is possibly 'undefined'.
+src/individual_add.tsx: error TS2305: Module '"@app/data_context_global"' has no exported member 'activeIndividuals'.
+src/individual_add.tsx: error TS2322: Type '"standard" | "filled" | "outlined"' is not assignable to type 'WrapperVariant | undefined'.
+src/individual_add.tsx: error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>) => void' is not assignable to type '(event: ChangeEvent<{}>, checked: boolean) => void'. | Types of parameters 'e' and 'event' are incompatible. | Type 'ChangeEvent<{}>' is not assignable to type 'ChangeEvent<HTMLInputElement>'.
+src/individual_add.tsx: error TS2322: Type '(value: Date) => void' is not assignable to type '(date: MaterialUiPickersDate, value?: string | null | undefined) => void'. | Types of parameters 'value' and 'date' are incompatible. | Type 'MaterialUiPickersDate' is not assignable to type 'Date'. | Type 'null' is not assignable to type 'Date'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string | undefined'. | Type 'null' is not assignable to type 'string | undefined'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_add.tsx: error TS2339: Property 'lineBreak' does not exist on type 'ClassNameMap<"control" | "paneControls" | "datum" | "responseBox" | "successIcon" | "boxTitle" | "ancestorBox" | "ancestorInput" | "inputWrapper" | "inputBox" | "bottomBox" | "sellingTitle">'.
+src/individual_add.tsx: error TS2339: Property 'litter_size' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size6w' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size6w' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size6w' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size6w' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size6w' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size6w' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2339: Property 'litter_size6w' does not exist on type 'LimitedBreeding | Breeding'. | Property 'litter_size6w' does not exist on type 'LimitedBreeding'.
+src/individual_add.tsx: error TS2345: Argument of type 'Date' is not assignable to parameter of type 'number'.
+src/individual_add.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/individual_add.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_add.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_add.tsx: error TS2739: Type '{ individual: Individual; herdOptions: LimitedHerd[]; herdKey: number; onUpdateIndividual: <T extends keyof Individual>(field: T, value: Individual[T]) => void; }' is missing the following properties from type '{ individual: Individual; herdOptions: LimitedHerd[]; herdKey?: number | undefined; onUpdateIndividual: any; herdHelperText: string; buyDateHelperText: string; }': herdHelperText, buyDateHelperText
+src/individual_add.tsx: error TS2740: Type '{ origin_herd: HerdNameID | undefined; birth_date: string | null; mother: LimitedIndividual | null; father: LimitedIndividual | null; litter_size: number | null; litter_size6w: number | null; genebank: string | undefined; }' is missing the following properties from type 'Individual': herd, certificate, color_note, death_date, and 17 more.
+src/individual_breeding_form.tsx: error TS2322: Type '"standard" | "filled" | "outlined"' is not assignable to type 'WrapperVariant | undefined'.
+src/individual_breeding_form.tsx: error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>) => void' is not assignable to type '(event: ChangeEvent<{}>, checked: boolean) => void'. | Types of parameters 'e' and 'event' are incompatible. | Type 'ChangeEvent<{}>' is not assignable to type 'ChangeEvent<HTMLInputElement>'.
+src/individual_breeding_form.tsx: error TS2322: Type '(value: Date) => void' is not assignable to type '(date: MaterialUiPickersDate, value?: string | null | undefined) => void'. | Types of parameters 'value' and 'date' are incompatible. | Type 'MaterialUiPickersDate' is not assignable to type 'Date'. | Type 'null' is not assignable to type 'Date'.
+src/individual_breeding_form.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_breeding_form.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/individual_breeding_form.tsx: error TS2322: Type '{ birth_date: string; herd: string; breeding_herd: string; mother: string; father: string; }' is not assignable to type 'LimitedBreeding'. | Object literal may only specify known properties, and 'birth_date' does not exist in type 'LimitedBreeding'.
+src/individual_breeding_form.tsx: error TS2345: Argument of type 'MaterialUiPickersDate' is not assignable to parameter of type 'number'. | Type 'null' is not assignable to type 'number'.
+src/individual_breeding_form.tsx: error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | null'. | Type 'undefined' is not assignable to type 'string | null'.
+src/individual_breeding_form.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_breeding_form.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_breeding_form.tsx: error TS2367: This comparison appears to be unintentional because the types 'ExtendedBreeding | undefined' and 'string' have no overlap.
+src/individual_breeding_form.tsx: error TS2367: This comparison appears to be unintentional because the types 'ExtendedBreeding | undefined' and 'string' have no overlap.
+src/individual_breeding_form.tsx: error TS2367: This comparison appears to be unintentional because the types 'ExtendedBreeding' and 'string' have no overlap.
+src/individual_breeding_form.tsx: error TS2739: Type '{ id: number; breed_date: null; breed_notes: string; father: string; mother: string; breeding_herd: string; birth_date: null; birth_notes: string; litter_size: null; litter_size6w: null; }' is missing the following properties from type 'ExtendedBreeding': mother_name, father_name, individuals
+src/individual_breeding_form.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number'.
+src/individual_certificate.tsx: error TS18048: 'individual' is possibly 'undefined'.
+src/individual_certificate.tsx: error TS2322: Type 'string | undefined' is not assignable to type 'Genebank | undefined'. | Type 'string' is not assignable to type 'Genebank'.
+src/individual_certificate.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_certificate.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_certificate.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_certificate.tsx: error TS7031: Binding element 'numPages' implicitly has an 'any' type.
+src/individual_death.tsx: error TS18047: 'individual.herd_tracking' is possibly 'null'.
+src/individual_death.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_death.tsx: error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'SetStateAction<string | null>'.
+src/individual_edit.tsx: error TS2304: Cannot find name 'ServerMessage'.
+src/individual_edit.tsx: error TS2304: Cannot find name 'previewCertificate'.
+src/individual_edit.tsx: error TS2339: Property 'button' does not exist on type 'ClassNameMap<"loading" | "form" | "control" | "paneControls" | "formWrapper" | "confirmBox" | "confirmField" | "flexbox">'.
+src/individual_edit.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_edit.tsx: error TS2345: Argument of type 'Individual | undefined' is not assignable to parameter of type 'Individual'. | Type 'undefined' is not assignable to type 'Individual'.
+src/individual_edit.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/individual_edit.tsx: error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+src/individual_edit.tsx: error TS2551: Property 'genebank_id' does not exist on type 'Individual'. Did you mean 'genebank'?
+src/individual_edit.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Individual'. | No index signature with a parameter of type 'string' was found on type 'Individual'.
+src/individual_edit.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Individual'. | No index signature with a parameter of type 'string' was found on type 'Individual'.
+src/individual_form.tsx: error TS2322: Type 'boolean | undefined' is not assignable to type 'boolean'. | Type 'undefined' is not assignable to type 'boolean'.
+src/individual_form.tsx: error TS2322: Type '{ value: boolean; label: string; }' is not assignable to type 'OptionType'.
+src/individual_form.tsx: error TS2322: Type '{ value: boolean; label: string; }[]' is not assignable to type 'OptionType[]'. | Type '{ value: boolean; label: string; }' is not assignable to type 'OptionType'. | Types of property 'value' are incompatible. | Type 'boolean' is not assignable to type 'string'.
+src/individual_form.tsx: error TS2339: Property 'comment' does not exist on type 'OptionType'.
+src/individual_form.tsx: error TS2339: Property 'herd' does not exist on type 'string'.
+src/individual_form.tsx: error TS2339: Property 'id' does not exist on type 'OptionType'.
+src/individual_form.tsx: error TS2345: Argument of type 'Genebank | undefined' is not assignable to parameter of type 'number'. | Type 'undefined' is not assignable to type 'number'.
+src/individual_form.tsx: error TS2345: Argument of type 'MaterialUiPickersDate' is not assignable to parameter of type 'number'. | Type 'null' is not assignable to type 'number'.
+src/individual_form.tsx: error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'. | Type 'undefined' is not assignable to type 'string'.
+src/individual_form.tsx: error TS2367: This comparison appears to be unintentional because the types 'FormAction.editIndividual' and 'FormAction.handleCertificate' have no overlap.
+src/individual_form.tsx: error TS2531: Object is possibly 'null'.
+src/individual_form.tsx: error TS2531: Object is possibly 'null'.
+src/individual_form.tsx: error TS2538: Type 'undefined' cannot be used as an index type.
+src/individual_form.tsx: error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/individual_report.tsx: error TS18047: 'individual.herd_tracking' is possibly 'null'.
+src/individual_report.tsx: error TS18047: 'individual.herd_tracking' is possibly 'null'.
+src/individual_report.tsx: error TS18047: 'reportDate' is possibly 'null'.
+src/individual_report.tsx: error TS18047: 'reportDate' is possibly 'null'.
+src/individual_report.tsx: error TS2322: Type 'number | undefined' is not assignable to type 'number'. | Type 'undefined' is not assignable to type 'number'.
+src/individual_report.tsx: error TS2322: Type 'string | HerdNameID' is not assignable to type 'string'. | Type 'HerdNameID' is not assignable to type 'string'.
+src/individual_report.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_report.tsx: error TS2339: Property 'herd' does not exist on type 'DateValue'.
+src/individual_report.tsx: error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<Date | null>'.
+src/individual_report.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_report.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_sell.tsx: error TS18047: 'i.number' is possibly 'null'.
+src/individual_sell.tsx: error TS18047: 'individual.herd_tracking' is possibly 'null'.
+src/individual_sell.tsx: error TS18047: 'individual.number' is possibly 'null'.
+src/individual_sell.tsx: error TS2322: Type 'number | undefined' is not assignable to type 'number'. | Type 'undefined' is not assignable to type 'number'.
+src/individual_sell.tsx: error TS2322: Type 'string | HerdNameID' is not assignable to type 'string'. | Type 'HerdNameID' is not assignable to type 'string'.
+src/individual_sell.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_sell.tsx: error TS2339: Property 'herd' does not exist on type 'DateValue'.
+src/individual_sell.tsx: error TS2790: The operand of a 'delete' operator must be optional.
+src/individual_sellingform.tsx: error TS2769: No overload matches this call. | Overload 1 of 4, '(value: string | number | Date): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number | Date'. | Overload 2 of 4, '(value: string | number): Date', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string | number'.
+src/individual_view.tsx: error TS18047: 'a.birth_date' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'a.number' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'b.number' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'individual.father' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/individual_view.tsx: error TS18047: 'individual.mother' is possibly 'null'.
+src/individual_view.tsx: error TS18048: 'individual.origin_herd' is possibly 'undefined'.
+src/individual_view.tsx: error TS18048: 'individual.origin_herd' is possibly 'undefined'.
+src/individual_view.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_view.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_view.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_view.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_view.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_view.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_view.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_view.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/individual_view.tsx: error TS2345: Argument of type '(a: DateValue, b: DateValue) => number' is not assignable to parameter of type '(a: DateWeight, b: DateWeight) => number'. | Types of parameters 'a' and 'a' are incompatible. | Property 'value' is missing in type 'DateWeight' but required in type 'DateValue'.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/individual_view.tsx: error TS2769: No overload matches this call. | Overload 1 of 2, '(that: string, locales?: string | string[] | undefined, options?: CollatorOptions | undefined): number', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'. | Overload 2 of 2, '(that: string): number', gave the following error. | Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/individual_view.tsx: error TS2769: No overload matches this call. | Overload 1 of 3, '(props: { href: string; } & { children?: ReactNode; color?: Color | undefined; disabled?: boolean | undefined; disableElevation?: boolean | undefined; disableFocusRipple?: boolean | undefined; ... 5 more ...; variant?: "text" | ... 2 more ... | undefined; } & { ...; } & CommonProps<...> & Pick<...>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'. | Overload 2 of 3, '(props: { component: ElementType<any>; } & { children?: ReactNode; color?: Color | undefined; disabled?: boolean | undefined; disableElevation?: boolean | undefined; ... 6 more ...; variant?: "text" | ... 2 more ... | undefined; } & { ...; } & CommonProps<...> & Pick<...>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'. | Overload 3 of 3, '(props: DefaultComponentProps<ExtendButtonBaseTypeMap<ButtonTypeMap<{}, "button">>>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'.
+src/individual_view.tsx: error TS2769: No overload matches this call. | Overload 1 of 3, '(props: { href: string; } & { children?: ReactNode; color?: Color | undefined; disabled?: boolean | undefined; disableElevation?: boolean | undefined; disableFocusRipple?: boolean | undefined; ... 5 more ...; variant?: "text" | ... 2 more ... | undefined; } & { ...; } & CommonProps<...> & Pick<...>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'. | Type 'null' is not assignable to type 'boolean | undefined'. | Overload 2 of 3, '(props: { component: ElementType<any>; } & { children?: ReactNode; color?: Color | undefined; disabled?: boolean | undefined; disableElevation?: boolean | undefined; ... 6 more ...; variant?: "text" | ... 2 more ... | undefined; } & { ...; } & CommonProps<...> & Pick<...>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'. | Overload 3 of 3, '(props: DefaultComponentProps<ExtendButtonBaseTypeMap<ButtonTypeMap<{}, "button">>>): Element', gave the following error. | Type 'boolean | "" | null | undefined' is not assignable to type 'boolean | undefined'.
+src/individual_weighthull.tsx: error TS18047: 'WHindividual.herd_tracking' is possibly 'null'.
+src/individual_weighthull.tsx: error TS2314: Generic type 'NumberFormat<T>' requires 1 type argument(s).
+src/individual_weighthull.tsx: error TS2322: Type '{ children: Element; classNamdfe: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'. | Property 'classNamdfe' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'. Did you mean 'className'?
+src/individual_weighthull.tsx: error TS2339: Property 'titleText' does not exist on type 'ClassNameMap<"formContainer" | "datePicker" | "responseBox" | "successIcon" | "boxTitle" | "infoText" | "checkContainer" | "popupContainer" | "textContainer" | "buttonContainer" | "altContainer" | "measureList" | "listButton" | "scriptLink">'.
+src/individual_weighthull.tsx: error TS2488: Type 'DateBodyfat[] | null | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/individual_weighthull.tsx: error TS2488: Type 'DateWeight[] | null | undefined' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/individual_weighthull.tsx: error TS2533: Object is possibly 'null' or 'undefined'.
+src/individual_weighthull.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Individual'. | No index signature with a parameter of type 'string' was found on type 'Individual'.
+src/individual_weighthull.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Individual'. | No index signature with a parameter of type 'string' was found on type 'Individual'.
+src/login.tsx: error TS2339: Property 'from' does not exist on type '{} | { from: { pathname: string; }; }'.
+src/manage.tsx: error TS18048: 'user.is_manager' is possibly 'undefined'.
+src/manage.tsx: error TS18049: 'user' is possibly 'null' or 'undefined'.
+src/manage.tsx: error TS18049: 'user' is possibly 'null' or 'undefined'.
+src/pedigree.tsx: error TS2322: Type 'LimitedIndividual | null' is not assignable to type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/pedigree.tsx: error TS2322: Type 'LimitedIndividual | null' is not assignable to type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/pedigree.tsx: error TS2322: Type 'LimitedIndividual | null' is not assignable to type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/pedigree.tsx: error TS2322: Type 'LimitedIndividual | null' is not assignable to type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2322: Type 'string | null' is not assignable to type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2339: Property 'herd' does not exist on type 'string | HerdNameID'. | Property 'herd' does not exist on type 'string'.
+src/pedigree.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'. | Type 'null' is not assignable to type 'string'.
+src/pedigree.tsx: error TS2538: Type 'null' cannot be used as an index type.
+src/pedigree_plot.tsx: error TS18047: 'network.current' is possibly 'null'.
+src/pedigree_plot.tsx: error TS2322: Type 'Network' is not assignable to type 'null'.
+src/pedigree_plot.tsx: error TS2345: Argument of type 'null' is not assignable to parameter of type 'HTMLElement'.
+src/pedigree_plot.tsx: error TS7006: Parameter 'params' implicitly has an 'any' type.
+src/settings.tsx: error TS18049: 'user' is possibly 'null' or 'undefined'.
+src/settings.tsx: error TS2339: Property 'form' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'form' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'inputForm' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'inputVariant' does not exist on type 'String'.
+src/settings.tsx: error TS2339: Property 'main' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'simpleField' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'simpleField' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2339: Property 'simpleField' does not exist on type '(props?: any) => ClassNameMap<"hidden" | "main" | "controls" | "leftControls" | "rightControls" | "inputForm">'.
+src/settings.tsx: error TS2554: Expected 2 arguments, but got 1.
+src/settings.tsx: error TS2554: Expected 2 arguments, but got 1.
+src/settings.tsx: error TS2554: Expected 2 arguments, but got 1.
+src/settings.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/settings.tsx: error TS2554: Expected 2-3 arguments, but got 1.
+src/settings.tsx: error TS7006: Parameter 'service' implicitly has an 'any' type.
+src/settings.tsx: error TS7006: Parameter 'service' implicitly has an 'any' type.
+src/settings.tsx: error TS7006: Parameter 'w' implicitly has an 'any' type.
+src/static_pages.tsx: error TS2732: Cannot find module './tags.json'. Consider using '--resolveJsonModule' to import module with '.json' extension.
+src/testbreed_form.tsx: error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>) => void' is not assignable to type '(event: ChangeEvent<{}>, checked: boolean) => void'. | Types of parameters 'e' and 'event' are incompatible. | Type 'ChangeEvent<{}>' is not assignable to type 'ChangeEvent<HTMLInputElement>'.
+src/testbreed_form.tsx: error TS2322: Type '(options: Individual[], state: FilterOptionsState<Individual>) => Individual[]' is not assignable to type '(options: LimitedIndividual[], state: FilterOptionsState<LimitedIndividual>) => LimitedIndividual[]'.
+src/testbreed_form.tsx: error TS2322: Type '(options: Individual[], state: FilterOptionsState<Individual>) => Individual[]' is not assignable to type '(options: LimitedIndividual[], state: FilterOptionsState<LimitedIndividual>) => LimitedIndividual[]'.
+src/testbreed_form.tsx: error TS2322: Type '(options: Individual[], state: FilterOptionsState<Individual>) => Individual[]' is not assignable to type '(options: LimitedIndividual[], state: FilterOptionsState<LimitedIndividual>) => LimitedIndividual[]'.
+src/testbreed_form.tsx: error TS2322: Type '(options: Individual[], state: FilterOptionsState<Individual>) => Individual[]' is not assignable to type '(options: LimitedIndividual[], state: FilterOptionsState<LimitedIndividual>) => LimitedIndividual[]'. | Types of parameters 'options' and 'options' are incompatible. | Type 'LimitedIndividual[]' is not assignable to type 'Individual[]'. | Type 'LimitedIndividual' is missing the following properties from type 'Individual': herd, certificate, birth_date, mother, and 21 more.
+src/testbreed_form.tsx: error TS2322: Type '(value: Date) => void' is not assignable to type '(date: MaterialUiPickersDate, value?: string | null | undefined) => void'. | Types of parameters 'value' and 'date' are incompatible. | Type 'MaterialUiPickersDate' is not assignable to type 'Date'. | Type 'null' is not assignable to type 'Date'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'Individual[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'Individual[]' is not assignable to parameter of type 'SetStateAction<never[]>'. | Type 'Individual[]' is not assignable to type 'never[]'. | Type 'Individual' is not assignable to type 'never'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual | null' is not assignable to parameter of type 'LimitedIndividual'. | Type 'null' is not assignable to type 'LimitedIndividual'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+src/testbreed_form.tsx: error TS2345: Argument of type 'LimitedIndividual[]' is not assignable to parameter of type 'SetStateAction<never[]>'. | Type 'LimitedIndividual[]' is not assignable to type 'never[]'. | Type 'LimitedIndividual' is not assignable to type 'never'.
+src/testbreed_recommendation.tsx: error TS2531: Object is possibly 'null'.
+src/testbreed_recommendation.tsx: error TS2531: Object is possibly 'null'.
+src/testbreed_recommendation.tsx: error TS2531: Object is possibly 'null'.
+src/testbreed_recommendation.tsx: error TS2531: Object is possibly 'null'.
+src/testbreed_recommendation.tsx: error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ genebankId: number | undefined; }'. | No index signature with a parameter of type 'string' was found on type '{ genebankId: number | undefined; }'.
+src/userForm.tsx: error TS2322: Type 'LimitedHerd[]' is not assignable to type 'Herd[]'. | Type 'LimitedHerd' is not assignable to type 'Herd'.
+src/userForm.tsx: error TS2322: Type 'string' is not assignable to type '"manager" | "owner" | "viewer"'.
+src/userForm.tsx: error TS2345: Argument of type '{ email: string; id: number; name: string; fullname: string; }' is not assignable to parameter of type 'NameID'. | Object literal may only specify known properties, and 'fullname' does not exist in type 'NameID'.
+src/userForm.tsx: error TS2554: Expected 2-3 arguments, but got 1.

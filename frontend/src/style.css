@@ -1,7 +1,10 @@
 /* stylelint-disable */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "@fontsource/open-sans/latin-400.css";
+@import "@fontsource/roboto/latin-300.css";
+@import "@fontsource/roboto/latin-400.css";
+@import "@fontsource/roboto/latin-500.css";
+@import "@fontsource/roboto/latin-700.css";
 
 html {
   margin: 0;
@@ -208,12 +211,6 @@ list-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.react-pdf__Page__annotations {
-  --scale-factor: 1.5 !important;
-  left: 5px;
-  top: 2px;
 }
 
 /* Used in filter_table.tsx */

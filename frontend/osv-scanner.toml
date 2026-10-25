@@ -1,0 +1,3 @@
+[[IgnoredVulns]]
+id = "GHSA-w5hq-g745-h8pq"
+reason = "uuid 9 is only vis-network's peer entry in the lockfile; the bundle uses vis-network's standalone build, and the fix (uuid 11.1.1) is outside vis-network's peer range."

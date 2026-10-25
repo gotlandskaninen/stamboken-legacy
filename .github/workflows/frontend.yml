@@ -14,9 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     # Same image as stamboken's scripts/build-legacy.dockerfile
     container: node:24-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205
-    env:
-      # Errors in src/ only: which peer types npm installs varies by npm version
-      MAX_TSC_ERRORS: 301
     defaults:
       run:
         working-directory: frontend
@@ -29,11 +26,16 @@ jobs:
       - name: Build
         run: PATH=node_modules/.bin:$PATH ./build.sh
 
-      - name: Type errors must not grow
+      - name: No new type errors
         run: |
-          n=$(node_modules/.bin/tsc --noEmit -p . | grep -c "^src/.*error TS" || true)
-          echo "tsc: $n errors in src/ (max $MAX_TSC_ERRORS)"
-          test "$n" -le "$MAX_TSC_ERRORS"
+          ./tsc-errors > /tmp/tsc-errors.txt
+          echo "tsc: $(wc -l < /tmp/tsc-errors.txt) errors in src/, baseline $(wc -l < tsc-baseline.txt)"
+          new=$(LC_ALL=C comm -13 tsc-baseline.txt /tmp/tsc-errors.txt)
+          if [ -n "$new" ]; then
+            echo "New type errors (after fixing old ones: ./tsc-errors > tsc-baseline.txt):"
+            echo "$new"
+            exit 1
+          fi
 
       - name: retire.js on the bundle
         run: npx --yes retire@6.1.0 --path dist

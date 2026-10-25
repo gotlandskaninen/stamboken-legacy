@@ -5,7 +5,6 @@ import {
   useLocation,
   Redirect,
   Link,
-  useHistory,
 } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
@@ -58,7 +57,6 @@ import {
   withStyles,
 } from "@material-ui/core";
 import { MenuProps } from "@material-ui/core/Menu";
-import hotjar from "react-hotjar";
 
 import "./style.css";
 import YearlyReportMultiStepForm from "./YearlyReportMultiStepForm";
@@ -136,7 +134,6 @@ export function Navigation() {
   const is_owner = !!(user?.is_owner && user.is_owner.length > 0);
   const is_logged_in = !!user;
   const theme = createTheme({}, svSE);
-  const history = useHistory();
   const [yearlyReportRounds, setYearlyReportRounds] = useState<any[]>([]);
 
   // Fetch yearly report rounds
@@ -316,14 +313,6 @@ export function Navigation() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  React.useEffect(() => {
-    return history.listen((location) => {
-      hotjar.hotjar.identify(user?.username, {
-        is_manager: user?.is_manager,
-        is_owner: user?.is_owner?.toString(),
-      });
-    });
-  }, [history]);
 
   const { Tabs, TabbedRoutes } = ui.useRoutedTabs(tabs);
 

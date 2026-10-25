@@ -28,10 +28,5 @@ npm run build
 
 ## Running locally
 
-```console
-npm run start
-```
-
-Note that it is recommended to do frontend development by running
-the Docker containers instead since backend functionality is
-required for a lot of the frontend functionality.
+Run the Docker containers; backend functionality is required for a lot
+of the frontend functionality.

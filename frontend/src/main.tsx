@@ -9,12 +9,14 @@ import { WithDataContext } from "@app/data_context";
 import { WithMessageContext } from "@app/message_context";
 import { WithBreedingContext } from "@app/breeding_context";
 import { Navigation } from "@app/navigation";
+import { NewStambokenBanner } from "@app/new_stamboken_banner";
 import { StylesProvider } from "@material-ui/core";
 
 const Main = (
   <>
     <StylesProvider injectFirst>
       <CssBaseline />
+      <NewStambokenBanner />
       <BrowserRouter>
         <WithDataContext>
           <WithUserContext>

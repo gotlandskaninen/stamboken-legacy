@@ -384,7 +384,7 @@ export function Footer() {
             target={"_blank"}
             rel={"noopener noreferrer"}
             href={
-              "https://github.com/NBISweden/theherdbook/releases/tag/" +
+              "https://github.com/gotlandskaninen/stamboken/releases/tag/" +
               tags.gitBranch
             }
           >

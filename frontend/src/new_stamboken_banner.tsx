@@ -45,7 +45,8 @@ export function NewStambokenBanner() {
           </IconButton>
         </>
       }
-      style={{ borderRadius: 0, flexWrap: "wrap" }}
+      // Below the fixed .menu (51 px, style.css), which otherwise covers it on wide screens.
+      style={{ borderRadius: 0, flexWrap: "wrap", marginTop: 51, position: "relative", zIndex: 99 }}
     >
       Intyg utfärdas och ändras nu i nya Stamboken. Vill du se hur den
       fungerar? Prova demoläget, där inget du gör påverkar de riktiga

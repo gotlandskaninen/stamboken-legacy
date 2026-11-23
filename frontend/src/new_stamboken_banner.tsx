@@ -36,7 +36,7 @@ export function NewStambokenBanner() {
           <Button
             color="inherit"
             size="small"
-            href="https://sb.gotlandskaninen.se/stamboken"
+            href="https://gotlandskaninen.se/stamboken"
           >
             Till nya Stamboken →
           </Button>

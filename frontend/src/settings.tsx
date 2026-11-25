@@ -8,6 +8,7 @@ import { get, post, patch } from "@app/communication";
 import { Button, TextField, Grid, Paper, makeStyles } from "@material-ui/core";
 import { useUserContext, WithUserContext } from "@app/user_context";
 import { useMessageContext } from "@app/message_context";
+import { MovedToNewStamboken } from "@app/new_stamboken_banner";
 
 const styles = makeStyles({
   main: {
@@ -199,30 +200,10 @@ export function Settings() {
                 </Button>
               </form>
 
-              <Grid container direction="column">
-                <form className={classes.form} noValidate autoComplete="off">
-                  <TextField
-                    label="Nuvarande lösenord"
-                    type="password"
-                    variant={inputVariant}
-                    hidden={false}
-                    className={classes.simpleField}
-                    onChange={(e) => setOldPassword(e.target.value)}
-                    value={oldPassword}
-                  />
-                  <TextField
-                    label="Nytt lösenord"
-                    type="password"
-                    variant={inputVariant}
-                    hidden={false}
-                    className={classes.simpleField}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    value={newPassword}
-                  />
-
-                  <Button onClick={() => changePassword()}>Byt lösenord</Button>
-                </form>
-              </Grid>
+              <MovedToNewStamboken>
+                Lösenord byts inte längre i gamla Stamboken. Behöver du ett
+                nytt lösenord återställer admin det i nya Stamboken.
+              </MovedToNewStamboken>
               <Grid container direction="row">
                 {linkedAuthenticators ? (
                   <>

@@ -24,10 +24,10 @@ import {
   TextField,
 } from "@material-ui/core";
 import { HerdForm } from "@app/herdForm";
-import { UserForm } from "@app/userForm";
 import { ActiveUsers } from "@app/activeUsers";
 import { Autocomplete } from "@material-ui/lab";
 import YearlyReportRounds from "./YearlyReportRounds";
+import { MovedToNewStamboken } from "@app/new_stamboken_banner";
 
 const useStyles = makeStyles({
   main: {
@@ -344,7 +344,9 @@ export function Manage() {
               </Button>
             </div>
           </div>
-          {topic !== "active_users" && view !== "yearly_report_rounds" && (
+          {topic !== "active_users" &&
+            topic !== "user" &&
+            view !== "yearly_report_rounds" && (
             <>
               <Autocomplete
                 options={filtered(options) ?? []}
@@ -404,7 +406,9 @@ export function Manage() {
           </Route>
           <Route path="/manage/user">
             <Paper className={styles.inputForm}>
-              <UserForm id={selected?.value} />
+              <MovedToNewStamboken href="https://gotlandskaninen.se/stamboken/admin/anvandare">
+                Konton och roller hanteras nu i nya Stamboken.
+              </MovedToNewStamboken>
             </Paper>
           </Route>
           <Route path="/manage/:genebank">

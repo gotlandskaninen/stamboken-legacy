@@ -200,7 +200,7 @@ export function Settings() {
                 </Button>
               </form>
 
-              <MovedToNewStamboken>
+              <MovedToNewStamboken href="https://gotlandskaninen.se/stamboken">
                 Lösenord byts inte längre i gamla Stamboken. Behöver du ett
                 nytt lösenord återställer admin det i nya Stamboken.
               </MovedToNewStamboken>

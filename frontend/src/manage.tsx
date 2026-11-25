@@ -406,8 +406,15 @@ export function Manage() {
           </Route>
           <Route path="/manage/user">
             <Paper className={styles.inputForm}>
-              <MovedToNewStamboken href="https://gotlandskaninen.se/stamboken/admin/anvandare">
-                Konton och roller hanteras nu i nya Stamboken.
+              {/* The page in the new Stamboken is for admin only, so a genbanksansvarig gets no link. */}
+              <MovedToNewStamboken
+                href={
+                  user?.is_admin
+                    ? "https://gotlandskaninen.se/stamboken/admin/anvandare"
+                    : undefined
+                }
+              >
+                Konton och roller hanteras nu av admin i nya Stamboken.
               </MovedToNewStamboken>
             </Paper>
           </Route>

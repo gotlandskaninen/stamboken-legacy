@@ -17,7 +17,7 @@ const wasDismissed = () => {
 /** Stands where a closed function was (ADR-0020 in gotlandskaninen/stamboken): the API answers 410 there. */
 export function MovedToNewStamboken({
   children,
-  href = "https://gotlandskaninen.se/stamboken",
+  href,
 }: {
   children: React.ReactNode;
   href?: string;
@@ -26,9 +26,11 @@ export function MovedToNewStamboken({
     <Alert
       severity="info"
       action={
-        <Button color="inherit" size="small" href={href}>
-          Till nya Stamboken →
-        </Button>
+        href && (
+          <Button color="inherit" size="small" href={href}>
+            Till nya Stamboken →
+          </Button>
+        )
       }
       style={{ flexWrap: "wrap" }}
     >

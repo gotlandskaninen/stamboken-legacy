@@ -225,14 +225,8 @@ export function Navigation() {
           </MovedToNewStamboken>
         </Restricted>
       ),
-      visible:
-        sortedActiveReportRounds.length > 0 &&
-        ((is_owner &&
-          sortedActiveReportRounds.some((round) => round.is_active)) ||
-          (is_admin &&
-            sortedActiveReportRounds.some(
-              (round) => round.is_active || round.manually_activated
-            ))),
+      // Not tied to the old round flags: a round opened in the new Stamboken leaves them unset.
+      visible: is_owner || is_admin,
       icon: <BallotIcon />,
     },
     {

@@ -32,6 +32,7 @@ import { HerdView } from "@app/herd_view";
 import { Manage } from "@app/manage";
 import { Owner } from "@app/owner";
 import { Settings } from "@app/settings";
+import { MovedToNewStamboken } from "@app/new_stamboken_banner";
 import { IndividualPedigree } from "@app/individual_pedigree";
 import { IndividualView } from "@app/individual_view";
 import { HerdPedigree } from "@app/herd_pedigree";
@@ -59,7 +60,6 @@ import {
 import { MenuProps } from "@material-ui/core/Menu";
 
 import "./style.css";
-import YearlyReportMultiStepForm from "./YearlyReportMultiStepForm";
 import { useState, useEffect } from "react";
 
 const StyledMenu = withStyles({
@@ -220,28 +220,13 @@ export function Navigation() {
       path: "/yearly",
       component: (
         <Restricted>
-          <YearlyReportMultiStepForm
-            reportRoundId={
-              sortedActiveReportRounds.length > 0
-                ? sortedActiveReportRounds[0].id
-                : undefined
-            }
-            reportYear={
-              sortedActiveReportRounds.length > 0
-                ? sortedActiveReportRounds[0].report_year
-                : undefined
-            }
-          />
+          <MovedToNewStamboken href="https://gotlandskaninen.se/stamboken/arsrapport">
+            Årsrapporten skickas nu i nya Stamboken.
+          </MovedToNewStamboken>
         </Restricted>
       ),
-      visible:
-        sortedActiveReportRounds.length > 0 &&
-        ((is_owner &&
-          sortedActiveReportRounds.some((round) => round.is_active)) ||
-          (is_admin &&
-            sortedActiveReportRounds.some(
-              (round) => round.is_active || round.manually_activated
-            ))),
+      // Not tied to the old round flags: a round opened in the new Stamboken leaves them unset.
+      visible: is_owner || is_admin,
       icon: <BallotIcon />,
     },
     {

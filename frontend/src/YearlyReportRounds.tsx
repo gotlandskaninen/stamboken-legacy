@@ -29,6 +29,7 @@ import "date-fns/locale/sv";
 import { dateFormat } from "@app/data_context_global";
 import { useMessageContext } from "@app/message_context";
 import { useHistory } from "react-router-dom";
+import { MovedToNewStamboken } from "@app/new_stamboken_banner";
 
 interface YearlyReportRound {
   id: number;
@@ -272,18 +273,10 @@ const YearlyReportRounds: React.FC = () => {
                 <TableCell>
                   <Button
                     variant="contained"
-                    color="secondary"
-                    onClick={() => handleDelete(round.id)}
-                  >
-                    Delete
-                  </Button>
-                  <Button
-                    variant="contained"
                     color="primary"
                     onClick={() =>
                       history.push(`/yearly-reports-view/${round.id}`)
                     }
-                    style={{ marginLeft: "8px" }}
                   >
                     View Reports
                   </Button>
@@ -295,94 +288,9 @@ const YearlyReportRounds: React.FC = () => {
       </TableContainer>
 
       <div className={classes.formSection}>
-        <Typography variant="h6" gutterBottom>
-          {selectedRoundId ? "Redigera Period" : "Skapa Ny Period"}
-        </Typography>
-        <form onSubmit={handleSubmit} className={classes.form}>
-          <MuiPickersUtilsProvider utils={DateFnsUtils} locale={svLocale}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  label="Rapportår"
-                  name="report_year"
-                  value={newRound.report_year}
-                  onChange={handleChange}
-                  fullWidth
-                  required
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <KeyboardDatePicker
-                  label="Startdatum"
-                  format={dateFormat}
-                  variant="inline"
-                  value={newRound.start_date}
-                  onChange={(date) => handleDateChange(date, "start_date")}
-                  fullWidth
-                  required
-                  KeyboardButtonProps={{
-                    "aria-label": "ändra datum",
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <KeyboardDatePicker
-                  label="Slutdatum"
-                  format={dateFormat}
-                  variant="inline"
-                  value={newRound.end_date}
-                  onChange={(date) => handleDateChange(date, "end_date")}
-                  fullWidth
-                  required
-                  KeyboardButtonProps={{
-                    "aria-label": "ändra datum",
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={newRound.is_active}
-                      onChange={(e) =>
-                        setNewRound({
-                          ...newRound,
-                          is_active: e.target.checked,
-                        })
-                      }
-                      name="is_active"
-                      color="primary"
-                    />
-                  }
-                  label="Aktiv"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={newRound.manually_activated}
-                      onChange={(e) =>
-                        setNewRound({
-                          ...newRound,
-                          manually_activated: e.target.checked,
-                        })
-                      }
-                      name="manually_activated"
-                      color="primary"
-                    />
-                  }
-                  label="Manuellt aktiverad"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <Button type="submit" variant="contained" color="primary">
-                  {selectedRoundId ? "Uppdatera Period" : "Skapa Period"}
-                </Button>
-              </Grid>
-            </Grid>
-          </MuiPickersUtilsProvider>
-        </form>
+        <MovedToNewStamboken href="https://gotlandskaninen.se/stamboken/arsrapport">
+          Årsrapportens rundor hanteras nu i nya Stamboken.
+        </MovedToNewStamboken>
       </div>
     </Paper>
   );
